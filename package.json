@@ -15,7 +15,7 @@
 	"main": "dist/wee-dom.js",
 	"module": "index.js",
 	"scripts": {
-		"dist": "webpack --config=webpack.config.js",
+		"dist": "webpack && NODE_ENV='prod' webpack --optimize-minimize",
 		"test": "karma start ./tests/scripts/karma.conf.js"
 	},
 	"devDependencies": {
