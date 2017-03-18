@@ -1,5 +1,5 @@
 import $ from 'index';
-import { $addClass } from 'index';
+import * as W from 'methods';
 
 describe('DOM', () => {
 	describe('$addClass', () => {
@@ -34,7 +34,7 @@ describe('DOM', () => {
 		it('should have standalone method', () => {
 			let el = document.querySelector('.test');
 
-			$addClass(el, 'fourth-class');
+			W.$addClass(el, 'fourth-class');
 
 			expect(el.className).to.equal('test another-class third-class fourth-class');
 		});
