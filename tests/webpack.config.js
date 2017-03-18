@@ -1,5 +1,5 @@
 const path = require('path');
-console.error(__dirname, "/../node_modules");
+
 module.exports = {
 	resolve: {
 		modules: [
