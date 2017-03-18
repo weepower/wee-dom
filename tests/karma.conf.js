@@ -26,12 +26,9 @@ module.exports = function(config) {
 		},
 
 		// Server
-		protocol: 'https',
+		protocol: 'http',
 		port: 9876,
-		httpsServerOptions: {
-			key: fs.readFileSync(resolve(__dirname, '../https/server.key'), 'utf8'),
-			cert: fs.readFileSync(resolve(__dirname, '../https/server.crt'), 'utf8')
-		},
+		httpsServerOptions: {},
 
 		// Logging
 		colors: true,
